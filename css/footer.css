@@ -1,0 +1,63 @@
+footer {
+  --bs-border-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--dark2);
+}
+footer .navbar-brand {
+  display: flex;
+}
+footer .navbar-brand .fa-align-right {
+  color: #009f4d;
+  font-size: 40px;
+  margin-top: 5px;
+}
+footer .navbar-brand-right {
+  margin-left: 10px;
+  color: #fff;
+  text-align: center;
+}
+footer .navbar-brand-right h1 {
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: capitalize;
+  margin: 0;
+}
+footer .navbar-brand-right p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+footer a {
+  color: #666;
+}
+footer a:hover {
+  transition: color 1s;
+  color: #fff;
+}
+footer .footer-outlink a {
+  font-size: 17px;
+}
+
+.goToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+}
+.goToTop button {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: var(--green-default);
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.dark footer {
+  background-color: var(--dark1);
+}

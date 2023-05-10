@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Corpvision</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body id="body">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fa-solid fa-align-right"></i>
+                    <div class="navbar-brand-right">
+                        <h1>Corp Vision</h1>
+                        <p>Vision to your Future</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav text-center text-lg-start m-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" href="./index.html" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./service.html">Service</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="./blog.html">Blog
+                                    posts</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="./404.html">404
+                                    page</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase"
+                                    href="./index.html">landing
+                                    page</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="#">elements
+                                    page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./contact.html">contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="search-layout">
+                        <button id="search_btn" onclick="openSacle();" class="search_btn mx-3">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button id="close_scale" onclick="closeScale();">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <input type="text" placeholder="Start typing">
+                    </div>
+                    <nav class="navigation">
+                        <label class="theme-switch" for="theme-toggle">
+                            <input type="checkbox" name="" id="theme-toggle" onchange="themeswitch()">
+                            <div class="theme-wrapper">
+                                <i class="fa-regular fa-moon"></i>
+                                <i class="fa-regular fa-sun"></i>
+                            </div>
+                        </label>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- banner -->
+        <section class="banner">
+            <div id="bannerId" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="overlay"></div>
+                        <img src="./img/b1.jpg" class="w-100 d-block" alt="First slide">
+                        <div class="w-100 carousel-caption d-block">
+                            <div class="container m-auto">
+                                <h1 class="animate__animated animate__flipInX fs-1 fw-bold">
+                                    Digital transformation driven by technology
+                                </h1>
+                                <p class="my-4 fs-5">
+                                    Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+                                </p>
+                                <button class="btn btn_green fs-5 animate__animated animate__fadeInDown">
+                                    Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="overlay"></div>
+                        <img src="./img/b2.jpg" class="w-100 d-block" alt="Second slide">
+                        <div class="w-100 carousel-caption d-block">
+                            <div class="container m-auto">
+                                <h1 class="animate__animated animate__fadeInUp fs-1 fw-bold">
+                                    Digital transformation driven by technology
+                                </h1>
+                                <p class="my-4 fs-5">
+                                    Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+                                </p>
+                                <button class="btn btn_green fs-5 animate__animated animate__fadeInDown">
+                                    Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="overlay"></div>
+                        <img src="./img/b3.jpg" class="w-100 d-block" alt="Third slide">
+                        <div class="w-100 carousel-caption d-block">
+                            <div class="container m-auto">
+                                <h1 class="animate__animated animate__fadeInDown fs-1 fw-bold">
+                                    Digital transformation driven by technology
+                                </h1>
+                                <p class="my-4 fs-5">
+                                    Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+                                </p>
+                                <button class="btn btn_green fs-5 animate__animated animate__fadeInDown">
+                                    Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#bannerId" data-bs-slide="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#bannerId" data-bs-slide="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="shape">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+                    <path fill-opacity="1">
+                        <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                            values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                      M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
+                        </animate>
+                    </path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="about_index py-5 fs-5">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-12 col-lg-6">
+                        <div class="title">
+                            <p class="sub-title text-uppercase fw-bold">
+                                about us
+                            </p>
+                            <h1 class="fw-bold">
+                                We make the best strategies for you, Enhancing your success
+                            </h1>
+                            <p class="my-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                ullamco laboris nisi ut ex ea.
+                            </p>
+                            <ul type="none">
+                                <li class="d-flex align-items-center pb-3">
+                                    <i class="fa-solid fa-check me-2 fw-bolder p-1 text-white"></i>
+                                    <span class="fw-bold">UI/UX Design and Development</span>
+                                </li>
+                                <li class="d-flex align-items-center pb-3">
+                                    <i class="fa-solid fa-check me-2 fw-bolder p-1 text-white"></i>
+                                    <span class="fw-bold">Branding Design and Identity</span>
+                                </li>
+                                <li class="d-flex align-items-center pb-3">
+                                    <i class="fa-solid fa-check me-2 fw-bolder p-1 text-white"></i>
+                                    <span class="fw-bold">Mobile App Design and Development</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row clearfix">
+                            <div class="col-6">
+                                <img src="./img/a.jpg" alt="" class="img-fluid rounded-3">
+                            </div>
+                            <div class="col-6 mt-4">
+                                <img src="./img/c1.jpg" alt="" class="img-fluid rounded-3">
+                                <img src="./img/c3.jpg" alt="" class="img-fluid rounded-3 mt-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features -->
+        <section class="features py-5 fs-5">
+            <div class="container py-5">
+                <div class="row clearfix">
+                    <div class="col-lg-6 align-self-center pe-lg-5">
+                        <div class="title">
+                            <p class="sub-title text-uppercase fw-bold">
+                                EVERY DAY BRINGS NEW CHALLENGES
+                            </p>
+                            <h1 class="fw-bold">
+                                Creative agency focused on vision, product and people
+                            </h1>
+                            <p class="my-4">
+                                Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est.
+                                Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet
+                                laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.
+                            </p>
+                            <button class="tbn btn_green">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0">
+                        <div class="features-wrapper">
+                            <div class="row clearfix g-3 g-lg-5">
+                                <div class="col-6">
+                                    <div class="features-items rounded-3 p-5">
+                                        <img src="./img/icon1.png" alt="">
+                                        <p class="text-capitalize fs-5 mt-3 fw-bold ">
+                                            Our Process
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="features-items rounded-3 p-5">
+                                        <img src="./img/icon2.png" alt="">
+                                        <p class="text-capitalize fs-5 mt-3 fw-bold ">
+                                            how we help
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="features-items rounded-3 p-5">
+                                        <img src="./img/icon3.png" alt="">
+                                        <p class="text-capitalize fs-5 mt-3 fw-bold ">
+                                            UI/UX design
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="features-items rounded-3 p-5">
+                                        <img src="./img/icon4.png" alt="">
+                                        <p class="text-capitalize fs-5 mt-3 fw-bold ">
+                                            Creative ideas
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- service -->
+        <section class="service py-5 fs-5 text-center">
+            <div class="container py-5">
+                <div class="title">
+                    <h1 class="fw-bold mb-5">
+                        Always there for your care, our Services
+                    </h1>
+                </div>
+
+                <div class="row clearfix justify-content-center gy-5 g-lg-0">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card border-0 position-relative rounded-3 overflow-hidden">
+                            <img class="card-img-top img-fluid" src="./img/s1.jpg" alt="Service 1">
+                            <div class="card-body">
+                                <a href="#"
+                                    class="card-title fs-5 text-capitalize fw-bold bg-white rounded-3 py-3 px-5">
+                                    work expertise
+                                </a>
+                                <p class="card-text">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                                    elit..</p>
+                                <a href="#" class="text-capitalize fw-bold mt-4">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card border-0 position-relative rounded-3 overflow-hidden">
+                            <img class="card-img-top img-fluid" src="./img/s2.jpg" alt="Service 1">
+                            <div class="card-body">
+                                <a href="#"
+                                    class="card-title fs-5 text-capitalize fw-bold bg-white rounded-3 py-3 px-5">
+                                    product development
+                                </a>
+                                <p class="card-text">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                                    elit..</p>
+                                <a href="#" class="text-capitalize fw-bold mt-4">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card border-0 position-relative rounded-3 overflow-hidden">
+                            <img class="card-img-top img-fluid" src="./img/s3.jpg" alt="Service 1">
+                            <div class="card-body">
+                                <a href="#"
+                                    class="card-title fs-5 text-capitalize fw-bold bg-white rounded-3 py-3 px-5">
+                                    software development
+                                </a>
+                                <p class="card-text">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                                    elit..</p>
+                                <a href="#" class="text-capitalize fw-bold mt-4">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- gallery -->
+        <section class="gallery py-5 fs-5 text-center">
+            <div class="container py-5">
+                <div class="title">
+                    <p class="sub-title text-uppercase fw-bold">
+                        OUR GALLERY
+                    </p>
+                    <h1 class="fw-bold mb-5">
+                        Successful projects we've done
+                    </h1>
+                </div>
+
+                <div class="row clearfix g-3 g-lg-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a class="card border-0 text-start position-relative overflow-hidden" href="./img/c1.jpg"
+                            data-fancybox="gallery" data-caption="Project Images 1">
+                            <img class="card-img-top img-fluid" src="./img/c1.jpg" alt="Image Gallery">
+                            <div class="card-body position-absolute text-white p-5">
+                                <h4 class="card-title">Project 1</h4>
+                                <p class="card-text"> Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a class="card border-0 text-start position-relative overflow-hidden" href="./img/c2.jpg"
+                            data-fancybox="gallery" data-caption="Project Images 2">
+                            <img class="card-img-top img-fluid" src="./img/c2.jpg" alt="Image Gallery">
+                            <div class="card-body position-absolute text-white p-5">
+                                <h4 class="card-title">Project 2</h4>
+                                <p class="card-text"> Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a class="card border-0 text-start position-relative overflow-hidden" href="./img/c3.jpg"
+                            data-fancybox="gallery" data-caption="Project Images 3">
+                            <img class="card-img-top img-fluid" src="./img/c3.jpg" alt="Image Gallery">
+                            <div class="card-body position-absolute text-white p-5">
+                                <h4 class="card-title">Project 3</h4>
+                                <p class="card-text"> Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a class="card border-0 text-start position-relative overflow-hidden" href="./img/c4.jpg"
+                            data-fancybox="gallery" data-caption="Project Images 4">
+                            <img class="card-img-top img-fluid" src="./img/c4.jpg" alt="Image Gallery">
+                            <div class="card-body position-absolute text-white p-5">
+                                <h4 class="card-title">Project 4</h4>
+                                <p class="card-text"> Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a class="card border-0 text-start position-relative overflow-hidden" href="./img/c5.jpg"
+                            data-fancybox="gallery" data-caption="Project Images 5">
+                            <img class="card-img-top img-fluid" src="./img/c5.jpg" alt="Image Gallery">
+                            <div class="card-body position-absolute text-white p-5">
+                                <h4 class="card-title">Project 5</h4>
+                                <p class="card-text"> Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a class="card border-0 text-start position-relative overflow-hidden" href="./img/c6.jpg"
+                            data-fancybox="gallery" data-caption="Project Images 6">
+                            <img class="card-img-top img-fluid" src="./img/c6.jpg" alt="Image Gallery">
+                            <div class="card-body position-absolute text-white p-5">
+                                <h4 class="card-title">Project 6</h4>
+                                <p class="card-text"> Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-100 p-0 p-lg-5 pb-0 mt-5 border-top">
+                    <div
+                        class="brand-wrapper mx-auto d-flex flex-wrap justify-content-center align-items-center gap-3 gap-lg-5">
+                        <div class="brand-items">
+                            <img class="img-fluid" src="./img/brand1.png" alt="">
+                        </div>
+                        <div class="brand-items">
+                            <img class="img-fluid" src="./img/brand3.png" alt="">
+                        </div>
+                        <div class="brand-items">
+                            <img class="img-fluid" src="./img/brand4.png" alt="">
+                        </div>
+                        <div class="brand-items">
+                            <img class="img-fluid" src="./img/brand5.png" alt="">
+                        </div>
+                        <div class="brand-items">
+                            <img class="img-fluid" src="./img/brand6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- progress -->
+        <section class="progress-layout py-5 fs-5">
+            <div class="container py-5">
+                <div class="row clearfix">
+                    <div class="col-12 col-lg-6">
+                        <img src="./img/about.jpg" alt="" class="img-fluid rounded-3">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="title">
+                            <p class="sub-title text-uppercase fw-bold">
+                                YOUR SUCCESS IS OUR SUCCESS
+                            </p>
+                            <h1 class="fw-bold mb-5">
+                                Web design, marketing & SEO solutions that get results
+                            </h1>
+                        </div>
+
+                        <div class="progress-wrapper my-3 progress-1">
+                            <div class="progress-title position-relative pb-3">
+                                <p>Marketing</p>
+                                <span class="position-absolute top-0 end-0">80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrapper my-3 progress-2">
+                            <div class="progress-title position-relative pb-3">
+                                <p>Responsive Web design</p>
+                                <span class="position-absolute top-0 end-0">95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrapper my-3 progress-3">
+                            <div class="progress-title position-relative pb-3">
+                                <p>Analytics</p>
+                                <span class="position-absolute top-0 end-0">60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrapper my-3 progress-4">
+                            <div class="progress-title position-relative pb-3">
+                                <p>Web Development</p>
+                                <span class="position-absolute top-0 end-0">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEEDBACK -->
+        <section class="feedback py-5 fs-5 text-center">
+            <div class="container py-5">
+                <div class="title">
+                    <p class="sub-title text-uppercase fw-bold">
+                        HAPPY CLIENTS FEEDBACK
+                    </p>
+                    <h1 class="fw-bold mb-5">
+                        Reviews and Testimonials
+                    </h1>
+                </div>
+
+                <div class="owl-carousel owl-theme w-75 mx-auto mt-5">
+                    <div class="item">
+                        <h4 class="fw-normal mb-5">
+                            Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                            voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                        </h4>
+
+                        <div class="user-wrapper mx-auto d-flex justify-content-center align-items-center">
+                            <div class="user-logo me-3">
+                                <img src="./img/team1.jpg" alt="">
+                            </div>
+                            <div class="user-info text-start">
+                                <p class="user-name fs-4 fw-bold">
+                                    Julia Sakura
+                                </p>
+                                <p class="user-position">
+                                    Student
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4 class="fw-normal mb-5">
+                            Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                            voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                        </h4>
+
+                        <div class="user-wrapper mx-auto d-flex justify-content-center align-items-center">
+                            <div class="user-logo me-3">
+                                <img src="./img/team2.jpg" alt="">
+                            </div>
+                            <div class="user-info text-start">
+                                <p class="user-name fs-4 fw-bold">
+                                    Julia Sakura
+                                </p>
+                                <p class="user-position">
+                                    Student
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4 class="fw-normal mb-5">
+                            Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                            voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                        </h4>
+
+                        <div class="user-wrapper mx-auto d-flex justify-content-center align-items-center">
+                            <div class="user-logo me-3">
+                                <img src="./img/team3.jpg" alt="">
+                            </div>
+                            <div class="user-info text-start">
+                                <p class="user-name fs-4 fw-bold">
+                                    Julia Sakura
+                                </p>
+                                <p class="user-position">
+                                    Student
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4 class="fw-normal mb-5">
+                            Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                            voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                        </h4>
+
+                        <div class="user-wrapper mx-auto d-flex justify-content-center align-items-center">
+                            <div class="user-logo me-3">
+                                <img src="./img/team4.jpg" alt="">
+                            </div>
+                            <div class="user-info text-start">
+                                <p class="user-name fs-4 fw-bold">
+                                    Julia Sakura
+                                </p>
+                                <p class="user-position">
+                                    Student
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blog -->
+        <section class="blog-wrapper py-5 fs-5">
+            <div class="container py-5">
+                <div class="title text-center">
+                    <p class="sub-title text-uppercase fw-bold">
+                        LATEST NEWS
+                    </p>
+                    <h1 class="fw-bold mb-5">
+                        Our insight and articles
+                    </h1>
+                </div>
+
+                <div class="row clearfix g-0 gy-3 g-md-3 g-lg-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-header overflow-hidden p-0 border-0">
+                                <img class="card-img-top img-fluid" src="./img/blog1.jpg" alt="Title">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">Startup Business</div>
+                                <a href="blog_detail.html" class="card-title fw-bold">Hello world!</a>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white">
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/w3_icon.jpeg" alt="">
+                                    <p class="fs-6 mx-2 fw-bold">by</p>
+                                    <strong>W3Layouts</strong>
+                                </div>
+                                <p class="card-time fs-6 fw-bold">April 1, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-header overflow-hidden p-0 border-0">
+                                <img class="card-img-top img-fluid" src="./img/blog2.jpg" alt="Title">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">Startup Business</div>
+                                <a href="blog_detail.html" class="card-title fw-bold">
+                                    Companies in NY launched a joint project on a three-tower hall
+                                </a>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white">
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/w3_icon.jpeg" alt="">
+                                    <p class="fs-6 mx-2 fw-bold">by</p>
+                                    <strong>W3Layouts</strong>
+                                </div>
+                                <p class="card-time fs-6 fw-bold">April 1, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-header overflow-hidden p-0 border-0">
+                                <img class="card-img-top img-fluid" src="./img/blog3.jpg" alt="Title">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">Startup Business</div>
+                                <a href="blog_detail.html" class="card-title fw-bold">
+                                    Design breakthrough upgrades the product and ready to launch
+                                </a>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white">
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/w3_icon.jpeg" alt="">
+                                    <p class="fs-6 mx-2 fw-bold">by</p>
+                                    <strong>W3Layouts</strong>
+                                </div>
+                                <p class="card-time fs-6 fw-bold">April 1, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact_index -->
+        <section class="contact_index py-5 fs-5">
+            <div class="container py-5">
+                <div class="title text-center w-75 mx-auto mb-5">
+                    <h1 class="fw-bold text-white mb-3">
+                        Let's find out how to work together
+                    </h1>
+                    <p class="sub-title">
+                        Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem
+                        ipsum dolor sit amet elit.
+                    </p>
+                </div>
+                <form class="contact_index-form w-50 mx-auto d-flex align-items-center border rounded-1">
+                    <label for="" class="form-label text-white">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </label>
+                    <input type="text" class="form-control h-100 px-3 rounded-0 bg-transparent text-white border-0"
+                        name="" id="" aria-describedby="helpId" placeholder="Your Email Address">
+                    <button type="submit" class="btn btn_green h-100 px-5">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-100 border-top fs-5">
+        <div class="container py-5 my-5">
+            <div class="row clearfix g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="navbar-brand mb-4" href="#">
+                        <i class="fa-solid fa-align-right"></i>
+                        <div class="navbar-brand-right">
+                            <h1>Corp Vision</h1>
+                            <p>Vision to your Future</p>
+                        </div>
+                    </a>
+
+                    <p class="text-muted">
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.
+                    </p>
+                    <div class="footer-outlink mt-4 d-flex align-items-center">
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3">
+                            CONTACT INFO
+                        </h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>Address :</strong>
+                                <span>
+                                    Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.
+                                </span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Phone Number : </strong>
+                                <a href="tel:+1(21) 234 4567">
+                                    +1(21) 234 4567
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Email : </strong>
+                                <a href="mailto:info@example.com">
+                                    info@example.com
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Support : </strong>
+                                <a href="mailto:info@support.com">
+                                    info@support.com
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3 fs-4">
+                            CATEGORIES
+                        </h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Marketing Strategy
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Startup Business
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Web development
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3 fs-4">
+                            META
+                        </h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Log in
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Entries feed
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Comments feed
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        WordPress.org
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-3 border-top text-center fs-6">
+            <p class="text-muted">
+                © 2023 Corp Vision All Rights Reserved | WordPress Theme by
+                <strong class="text-success">W3Layouts</strong>.
+            </p>
+        </div>
+    </footer>
+
+    <div class="goToTop">
+        <button id="goToTop_btn">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+    </div>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

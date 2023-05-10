@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Corpvision</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body id="body">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fa-solid fa-align-right"></i>
+                    <div class="navbar-brand-right">
+                        <h1>Corp Vision</h1>
+                        <p>Vision to your Future</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav text-center text-lg-start m-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./index.html" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./service.html">Service</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="./blog.html">Blog
+                                    posts</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="./404.html">404
+                                    page</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase"
+                                    href="./index.html">landing
+                                    page</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="#">elements
+                                    page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" href="./contact.html">contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="search-layout">
+                        <button id="search_btn" onclick="openSacle();" class="search_btn mx-3">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button id="close_scale" onclick="closeScale();">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <input type="text" placeholder="Start typing">
+                    </div>
+                    <nav class="navigation">
+                        <label class="theme-switch" for="theme-toggle">
+                            <input type="checkbox" name="" id="theme-toggle" onchange="themeswitch()">
+                            <div class="theme-wrapper">
+                                <i class="fa-regular fa-moon"></i>
+                                <i class="fa-regular fa-sun"></i>
+                            </div>
+                        </label>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- breadcrumb -->
+        <header class="breadcrumb mx-auto text-center text-white my-0   ">
+            <h1 class="mb-3 fw-bold">
+                Contact Us
+            </h1>
+
+            <p class="sub-breadcrumb">
+                We are an agency located in New York
+            </p>
+        </header>
+
+        <!-- contact -->
+        <section class="contact-wrapper py-5 fs-5 bg-light">
+            <div class="container py-5">
+                <div class="row clearfix justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <div class="title text-center">
+                            <h1 class="fw-bold">
+                                We are a full-service creative agency
+                            </h1>
+                            <p class="sub-title mb-5 mt-3">
+                                Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est.
+                                Quisque
+                                ut lectus consequat, eros et.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix justify-content-center three-info gy-5 gx-md-5 gy-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="row rounded-3 p-4">
+                            <div class="col-2">
+                                <i class="fa-regular fa-map"></i>
+                            </div>
+                            <div class="col-10">
+                                <p class="fw-bold color-default">Our Location:</p>
+                                <p class="color-second">
+                                    Corp Vision, 343 marketing, #21 cravel 1st street, NY - 62617.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="row rounded-3 p-4">
+                            <div class="col-2">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <div class="col-10">
+                                <p class="fw-bold color-default">Give us a call</p>
+                                <a class="color-second" href="tel:+12 404-11-22-89">
+                                    +12 404-11-22-89
+                                </a> <br>
+                                <a class="color-second" href="tel:+12 404-11-22-99">
+                                    +12 404-11-22-99
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="row rounded-3 p-4">
+                            <div class="col-2">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="col-10">
+                                <p class="fw-bold color-default">Help Desk</p>
+                                <a class="color-second" href="mailto:company@gmail.com">
+                                    company@gmail.com
+                                </a>
+                                <a class="color-second" href="mailto:support@gmail.com">
+                                    support@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- map -->
+                <div class="row clearfix">
+                    <div class="col-12">
+                        <div class="map my-5">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059445135!2d-74.25986613799748!3d40.69714941774136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e3!4m0!4m0!5e0!3m2!1sen!2sin!4v1570181661801!5m2!1sen!2sin"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title text-center">
+                    <h1 class="fw-bold mb-3">
+                        Let's talk about your project
+                    </h1>
+                    <p class="sub-title mb-5">
+                        We have made it easy for clients to reach us and get their solutions weaved
+                    </p>
+                </div>
+
+                <div class="container fs-5">
+                    <form>
+
+                        <div class="row gy-4 g-md-4">
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control" name="" id="" placeholder="Name*">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="number" class="form-control" name="" id=""
+                                    placeholder="Your Phone Number*">
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <input type="email" class="form-control" name="" id="" placeholder="Email*">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control" name="" id="" placeholder="Subject*">
+                            </div>
+
+                            <div class="col-12">
+                                <textarea rows="5" class="form-control" id="textareaComment" required
+                                    placeholder="Messanger*"></textarea>
+                            </div>
+                        </div>
+                        <div class="mt-5 row justify-content-center justify-content-lg-end mx-0">
+                            <button type="submit" class="btn_green">Submit Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-100 border-top fs-5">
+        <div class="container py-5 my-5">
+            <div class="row clearfix g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="navbar-brand mb-4" href="#">
+                        <i class="fa-solid fa-align-right"></i>
+                        <div class="navbar-brand-right">
+                            <h1>Corp Vision</h1>
+                            <p>Vision to your Future</p>
+                        </div>
+                    </a>
+
+                    <p class="text-muted">
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.
+                    </p>
+                    <div class="footer-outlink mt-4 d-flex align-items-center">
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3">
+                            CONTACT INFO
+                        </h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>Address :</strong>
+                                <span>
+                                    Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.
+                                </span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Phone Number : </strong>
+                                <a href="tel:+1(21) 234 4567">
+                                    +1(21) 234 4567
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Email : </strong>
+                                <a href="mailto:info@example.com">
+                                    info@example.com
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Support : </strong>
+                                <a href="mailto:info@support.com">
+                                    info@support.com
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3 fs-4">
+                            CATEGORIES
+                        </h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Marketing Strategy
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Startup Business
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Web development
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3 fs-4">
+                            META
+                        </h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Log in
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Entries feed
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Comments feed
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        WordPress.org
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-3 border-top text-center fs-6">
+            <p class="text-muted">
+                © 2023 Corp Vision All Rights Reserved | WordPress Theme by
+                <strong class="text-success">W3Layouts</strong>.
+            </p>
+        </div>
+    </footer>
+
+    <div class="goToTop">
+        <button id="goToTop_btn">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+    </div>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+section.error-page {
+    background-color: #f7f7f7 !important;
+
+    h1.green-default {
+        font-size: 9rem;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-color: rgba($color: #000000, $alpha: 0.1);
+        border-radius: 0.5rem;
+
+        &:is(:hover, :focus) {
+            border-color: rgba($color: #000000, $alpha: 1);
+        }
+
+        .form-control {
+            flex: 1;
+            padding: 1rem 1.2rem;
+            border: none;
+            border-radius: 0.5rem 0 0 0.5rem;
+
+            &::placeholder {
+                font-style: italic;
+            }
+
+            &:is(:hover, :focus) {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+
+        button {
+            padding: 1rem 1.5rem;
+            height: 100%;
+            border: none;
+            border-radius: 0 0.5rem 0.5rem 0;
+            background-color: var(--green-default);
+            color: #fff;
+        }
+    }
+}
+
+.dark {
+    section.error-page {
+        background-color: var(--dark1) !important;
+
+        form {
+            .form-control {
+                border-color: rgba($color: #000000, $alpha: 0.1);
+            }
+        }
+    }
+}

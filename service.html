@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Corpvision</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/service.css">
+
+</head>
+
+<body id="body">
+    <!-- header  -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fa-solid fa-align-right"></i>
+                    <div class="navbar-brand-right">
+                        <h1>Corp Vision</h1>
+                        <p>Vision to your Future</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav text-center text-lg-start m-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./index.html" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" href="./service.html">Service</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="./blog.html">Blog
+                                    posts</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="./404.html">404
+                                    page</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase"
+                                    href="./index.html">landing
+                                    page</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="#">elements
+                                    page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./contact.html">contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="search-layout">
+                        <button id="search_btn" onclick="openSacle();" class="search_btn mx-3">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button id="close_scale" onclick="closeScale();">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <input type="text" placeholder="Start typing">
+                    </div>
+                    <nav class="navigation">
+                        <label class="theme-switch" for="theme-toggle">
+                            <input type="checkbox" name="" id="theme-toggle" onchange="themeswitch()">
+                            <div class="theme-wrapper">
+                                <i class="fa-regular fa-moon"></i>
+                                <i class="fa-regular fa-sun"></i>
+                            </div>
+                        </label>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- breadcrumb -->
+        <header class="breadcrumb mx-auto text-center text-white my-0">
+            <h1 class="mb-3 fw-bold">Service</h1>
+
+            <p class="sub-breadcrumb">
+                We work with bold brands that we believe in
+            </p>
+        </header>
+
+        <!-- service -->
+        <section class="service-layout fs-5 py-5">
+            <div class="container py-lg-5 py-md-4 py-2">
+                <div class="title text-center">
+                    <h5 class="sub-title fw-bold text-uppercase">Check our services</h5>
+                    <h1 class="color-default mb-5">
+                        Introduce our best and reliable services for <br>all your business
+                    </h1>
+                </div>
+                <div class="row flex-wrap gy-5">
+                    <div class="col-lg-6">
+                        <div
+                            class="wrapper d-flex justify-content-center align-items-center flex-column text-center p-5 rounded-3">
+                            <img src="./img/icon1.png" alt="" width="75px" class="img-fluid mb-3">
+                            <h1 class="title-service fw-bold mb-5 mb-md-4">Product Design</h1>
+                            <p class="text-para mb-lg-2 mb-0">Aurabitur id gravida risus. Fusce eget ex , ultricies nisi
+                                ac sed,
+                                lacinia est. Quisque ut lectus, eros et, sed risus. Nullam sit amet laoreet elit. non
+                                init magnaa velit, dolor eget ex. </p>
+                            <button class="btn_green mt-lg-4 mt-4">
+                                Know more
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./img/s1.jpg" alt="" class="w-100 img-fluid">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./img/s2.jpg" alt="" class="w-100 img-fluid">
+                    </div>
+                    <div class="col-lg-6">
+                        <div
+                            class="wrapper d-flex justify-content-center align-items-center flex-column text-center p-5 rounded-3">
+                            <img src="./img/icon2.png" alt="" width="75px" class="img-fluid mb-3">
+                            <h1 class="title-service fw-bold mb-5 mb-md-4">E-commerce Design</h1>
+                            <p class="text-para mb-lg-2 mb-0">
+                                Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac sed, lacinia est. Quisque
+                                ut lectus, eros et, sed risus. Nullam sit amet laoreet elit. non init magnaa velit,
+                                dolor eget ex.
+                            </p>
+                            <button class="btn_green mt-lg-4 mt-4">
+                                Know more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- industries -->
+        <section class="industries-layout fs-5 py-5">
+            <div class="container py-lg-5 py-md-4 py-2">
+                <div class="title text-center">
+                    <h5 class="sub-title fw-bold text-uppercase">Beautifully crafted creative solutions</h5>
+                    <h1 class="color-default mb-5">
+                        What industries we serve?
+                    </h1>
+                </div>
+
+                <div class="row gy-5 gx-md-5 gy-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="row p-5 rounded-3">
+                            <div class="col-2 col-md-3 col-lg-2">
+                                <i class="fa-regular fa-money-bill-1 green-default fs-1"></i>
+                            </div>
+                            <div class="col-10 col-md-9 col-lg-10">
+                                <h4 class="fs-3 color-default fw-bold green-default-hover mb-3">
+                                    Investment Planning
+                                </h4>
+                                <p class="color-second">
+                                    Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="row p-5 rounded-3">
+                            <div class="col-2 col-md-3 col-lg-2">
+                                <i class="fa-regular fa-money-bill-1 green-default fs-1"></i>
+                            </div>
+                            <div class="col-10 col-md-9 col-lg-10">
+                                <h4 class="fs-3 color-default fw-bold green-default-hover mb-3">
+                                    Investment Planning
+                                </h4>
+                                <p class="color-second">
+                                    Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="row p-5 rounded-3">
+                            <div class="col-2 col-md-3 col-lg-2">
+                                <i class="fa-regular fa-money-bill-1 green-default fs-1"></i>
+                            </div>
+                            <div class="col-10 col-md-9 col-lg-10">
+                                <h4 class="fs-3 color-default fw-bold green-default-hover mb-3">
+                                    Investment Planning
+                                </h4>
+                                <p class="color-second">
+                                    Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="row p-5 rounded-3">
+                            <div class="col-2 col-md-3 col-lg-2">
+                                <i class="fa-regular fa-money-bill-1 green-default fs-1"></i>
+                            </div>
+                            <div class="col-10 col-md-9 col-lg-10">
+                                <h4 class="fs-3 color-default fw-bold green-default-hover mb-3">
+                                    Investment Planning
+                                </h4>
+                                <p class="color-second">
+                                    Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="row p-5 rounded-3">
+                            <div class="col-2 col-md-3 col-lg-2">
+                                <i class="fa-regular fa-money-bill-1 green-default fs-1"></i>
+                            </div>
+                            <div class="col-10 col-md-9 col-lg-10">
+                                <h4 class="fs-3 color-default fw-bold green-default-hover mb-3">
+                                    Investment Planning
+                                </h4>
+                                <p class="color-second">
+                                    Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="row p-5 rounded-3">
+                            <div class="col-2 col-md-3 col-lg-2">
+                                <i class="fa-regular fa-money-bill-1 green-default fs-1"></i>
+                            </div>
+                            <div class="col-10 col-md-9 col-lg-10">
+                                <h4 class="fs-3 color-default fw-bold green-default-hover mb-3">
+                                    Investment Planning
+                                </h4>
+                                <p class="color-second">
+                                    Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- form -->
+        <section class="form-layout fs-5 py-5">
+            <div class="overlay"></div>
+            <div class="container py-lg-5 py-md-4 py-2 position-relative">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="title">
+                            <h5 class="sub-title text-uppercase fs-6 mb-3">Innovative technology</h5>
+                            <h1 class="mb-5">
+                                We use latest technologies that are proven and practical
+                            </h1>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <i class="fa-solid fa-map fs-1 text-white"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="mb-2 fw-bold">Our Location:</h4>
+                                <p>Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
+                            </div>
+                        </div>
+
+                        <hr class="my-4" width="100%" size="1px" noshade style="color: #fff;">
+
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <i class="fa-solid fa-phone fs-1 text-white"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="mb-2 fw-bold">Phone Numbers:</h4>
+                                <a href="tel:+142 5897555">+142 5897555</a>
+                                <span>,</span>
+                                <a href="tel:+142 5897555">+142 5897555</a>
+                            </div>
+                        </div>
+
+                        <hr class="my-4" width="100%" size="1px" noshade style="color: #fff;">
+
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <i class="fa-regular fa-envelope fs-1 text-white"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="mb-2 fw-bold">Email Addresses:</h4>
+                                <a href="mailto:mail@company1.com">mail@company1.com</a>
+                                <span>,</span>
+                                <a href="mailto:mail@company2.com">mail@company2.com</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-6 p-5 wrapper rounded-3 mt-md-5">
+                        <h4 class="fs-3 color-default fw-bold mb-3">
+                            Lets talk about your project
+                        </h4>
+                        <p class="color-second mb-4">
+                            We have made it easy for clients to reach us and get their solutions weaved
+                        </p>
+                        <form class="row gy-3">
+                            <div class="col-12">
+                                <input type="text" class="form-control fs-5 form-control-lg rounded-2"
+                                    placeholder="Your Name*" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" class="form-control fs-5 form-control-lg rounded-2"
+                                    placeholder="Email*" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control fs-5 rounded-2" placeholder="Message*" required cols="30"
+                                    rows="4"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn_green">Get Started</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- solution -->
+        <section class="solution-layout fs-5 py-5">
+            <div class="container py-lg-5 py-md-4 py-2">
+                <div class="title text-center">
+                    <h5 class="sub-title fw-bold text-uppercase">BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS</h5>
+                    <h1 class="color-default mb-5">
+                        Services that create identities, build brands, and get results
+                    </h1>
+                </div>
+                <div class="row py-3 gy-4 g-lg-5 text-center justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="wrapper rounded-3 py-5 px-4">
+                            <img src="./img/icon1.png" alt="" class="img-fluid">
+                            <h4 class="fw-bold my-4 color-default">
+                                Business Analysis
+                            </h4>
+                            <p class="color-second">
+                                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex
+                                fermentum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="wrapper rounded-3 py-5 px-4">
+                            <img src="./img/icon2.png" alt="" class="img-fluid">
+                            <h4 class="fw-bold my-4 color-default">
+                                Project Reporting
+                            </h4>
+                            <p class="color-second">
+                                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex
+                                fermentum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="wrapper rounded-3 py-5 px-4">
+                            <img src="./img/icon3.png" alt="" class="img-fluid">
+                            <h4 class="fw-bold my-4 color-default">
+                                Security Enhanced
+                            </h4>
+                            <p class="color-second">
+                                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex
+                                fermentum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-100 border-top fs-5">
+        <div class="container py-5 my-5">
+            <div class="row clearfix g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="navbar-brand mb-4" href="#">
+                        <i class="fa-solid fa-align-right"></i>
+                        <div class="navbar-brand-right">
+                            <h1>Corp Vision</h1>
+                            <p>Vision to your Future</p>
+                        </div>
+                    </a>
+
+                    <p class="text-muted">
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+                        amet Semper at elit team advisors.
+                    </p>
+                    <div class="footer-outlink mt-4 d-flex align-items-center">
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3">CONTACT INFO</h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>Address :</strong>
+                                <span>
+                                    Corp Vision, 343 marketing, #21 cravel 1st lane street, NY -
+                                    62617.
+                                </span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Phone Number : </strong>
+                                <a href="tel:+1(21) 234 4567"> +1(21) 234 4567 </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Email : </strong>
+                                <a href="mailto:info@example.com"> info@example.com </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Support : </strong>
+                                <a href="mailto:info@support.com"> info@support.com </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3 fs-4">CATEGORIES</h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url"> Marketing Strategy </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url"> Startup Business </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url"> Web development </a>
+                                </strong>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3 fs-4">META</h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url"> Log in </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url"> Entries feed </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url"> Comments feed </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url"> WordPress.org </a>
+                                </strong>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-3 border-top text-center fs-6">
+            <p class="text-muted">
+                © 2023 Corp Vision All Rights Reserved | WordPress Theme by
+                <strong class="text-success">W3Layouts</strong>.
+            </p>
+        </div>
+    </footer>
+
+    <div class="goToTop">
+        <button id="goToTop_btn">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+    </div>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

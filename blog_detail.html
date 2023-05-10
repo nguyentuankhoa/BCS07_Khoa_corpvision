@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Corpvision - Blog</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body id="body">
+    <!-- header  -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fa-solid fa-align-right"></i>
+                    <div class="navbar-brand-right">
+                        <h1>Corp Vision</h1>
+                        <p>Vision to your Future</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav text-center text-lg-start m-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./index.html" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./service.html">Service</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-uppercase dropdown-toggle active" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase active" href="./blog.html">Blog
+                                    posts</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="./404.html">404
+                                    page</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase"
+                                    href="./index.html">landing
+                                    page</a>
+                                <a class="dropdown-item py-2 ps-4 pe-4 pe-lg-5 text-uppercase" href="#">elements
+                                    page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./contact.html">contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="search-layout">
+                        <button id="search_btn" onclick="openSacle();" class="search_btn mx-3">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button id="close_scale" onclick="closeScale();">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <input type="text" placeholder="Start typing">
+                    </div>
+                    <nav class="navigation">
+                        <label class="theme-switch" for="theme-toggle">
+                            <input type="checkbox" name="" id="theme-toggle" onchange="themeswitch()">
+                            <div class="theme-wrapper">
+                                <i class="fa-regular fa-moon"></i>
+                                <i class="fa-regular fa-sun"></i>
+                            </div>
+                        </label>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- breadcrumb -->
+        <header class="breadcrumb mx-auto text-center text-white my-0   ">
+            <h1 class="mb-3 fw-bold">
+                Single Post
+            </h1>
+
+            <p class="sub-breadcrumb">
+                Experience you can trust, service you can count on.
+            </p>
+        </header>
+
+        <!-- blog -->
+        <section class="blog-detail-wrapper py-5 fs-5">
+            <div class="container py-5">
+                <div class="row clearfix justify-content-center align-items-center">
+                    <div class="col-9">
+                        <img class="w-100 rounded-3 img-fluid mb-5" src="./img/blog1.jpg" alt="">
+                        <p class="fs-3 fw-bold color-default">Hello world!</p>
+                        <p class="my-4 color-second">
+                            Welcome to <a class="text-success fw-bold" href="#">W3Layouts free WordPress Demo Sites</a>.
+                            This is your first post. Edit or delete it, then start writing!
+                        </p>
+
+                        <div class="card border-0 flex-column flex-lg-row py-5 px-4">
+                            <img class="card-img-top me-3" src="./img/w3_icon.jpeg" alt="Title">
+                            <div class="card-body">
+                                <a class="card-title fw-bold fs-3 color-default">W3Layouts</a>
+                                <p class="card-text color-second my-4">
+                                    We help developers, designers and website owner's create stunning
+                                    websites. We have been building a huge collection of website templates for every
+                                    business and industry needs. Simply select your favourite template, edit, download
+                                    and launc
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="me-3 color-second green-default-hover">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="me-3 color-second green-default-hover">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="me-3 color-second green-default-hover">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav class="navigation mt-5 border border-start-0 border-end-0 page-navigation">
+                            <ul type="none" class="d-flex">
+                                <li class="page-item py-4">
+                                    <a href="blog.html" class="page-link">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        <strong>
+                                            Previous Post
+                                        </strong>
+                                    </a>
+                                </li>
+                                <li class="page-item py-4">
+                                    <a href="blog.html" class="page-link">
+                                        <strong>
+                                            Next Post
+                                        </strong>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <p class="fs-2 my-4 color-default">One thought on “Hello world!”</p>
+
+                        <div class="comment-wrapper border rounded-3 px-3 pt-4 pb-5">
+                            <div class="row">
+                                <div class="col-2 col-lg-1">
+                                    <img class="img-fluid" src="./img/d7a973c7dab26985da5f961be7b74480.png" alt="">
+                                </div>
+                                <div class="col-10 col-lg-11 fs-5 color-second">
+                                    <a href="#" class="color-default">
+                                        <strong>
+                                            A WordPress Commenter
+                                        </strong>
+                                    </a>
+
+                                    <div class="w-100 d-flex">
+                                        <p>
+                                            April 1, 2021 at 10:49 am
+                                        </p>
+                                        <button class="green-default fw-bold bg-transparent border-0 ms-5">
+                                            Reply
+                                        </button>
+                                    </div>
+                                    <p>
+                                        Hi, this is a comment. <br>
+                                        To get started with moderating, editing, and deleting comments, please visit the
+                                        Comments screen in the dashboard. <br>
+                                        Commenter avatars come from <strong
+                                            class="fs-4 cursor-pointer">Gravatar</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="w-100 mt-5">
+                            <p class="fs-1 fw-bold color-default">
+                                Leave a Reply
+                            </p>
+                            <p class="color-second">
+                                Your email address will not be published. Required fields are marked *
+                            </p>
+                            <div class="mb-3 row">
+                                <label for="textareaComment" class="col-12 col-form-label">Comment *</label>
+                                <div class="col-12">
+                                    <textarea rows="5" class="form-control form-control-lg" id="textareaComment"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputName" class="col-12 col-form-label">Name</label>
+                                <div class="col-12">
+                                    <input type="text" class="form-control form-control-lg" id="inputName">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputEmail" class="col-12 col-form-label">Email *</label>
+                                <div class="col-12">
+                                    <input type="email" class="form-control form-control-lg" id="inputEmail">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputWebsite" class="col-12 col-form-label">Website *</label>
+                                <div class="col-12">
+                                    <input type="text" class="form-control form-control-lg" id="inputWebsite">
+                                </div>
+                            </div>
+                            <fieldset class="mb-3 row">
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkbox">
+                                        <label class="form-check-label fs-6" for="checkbox">
+                                            Save my name, email, and website in this browser for the next time I
+                                            comment.
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="mb-3 row justify-content-end">
+                                <button type="submit" class="btn fw-bold">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-100 border-top fs-5">
+        <div class="container py-5 my-5">
+            <div class="row clearfix g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="navbar-brand mb-4" href="#">
+                        <i class="fa-solid fa-align-right"></i>
+                        <div class="navbar-brand-right">
+                            <h1>Corp Vision</h1>
+                            <p>Vision to your Future</p>
+                        </div>
+                    </a>
+
+                    <p class="text-muted">
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.
+                    </p>
+                    <div class="footer-outlink mt-4 d-flex align-items-center">
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="me-3">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3">
+                            CONTACT INFO
+                        </h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>Address :</strong>
+                                <span>
+                                    Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.
+                                </span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Phone Number : </strong>
+                                <a href="tel:+1(21) 234 4567">
+                                    +1(21) 234 4567
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Email : </strong>
+                                <a href="mailto:info@example.com">
+                                    info@example.com
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>Support : </strong>
+                                <a href="mailto:info@support.com">
+                                    info@support.com
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3 fs-4">
+                            CATEGORIES
+                        </h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Marketing Strategy
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Startup Business
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Web development
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="title mb-4">
+                        <h1 class="text-white text-uppercase mb-3 fs-4">
+                            META
+                        </h1>
+                    </div>
+
+                    <ul type="none">
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Log in
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Entries feed
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        Comments feed
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                <strong>
+                                    <a href="#url">
+                                        WordPress.org
+                                    </a>
+                                </strong>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-3 border-top text-center fs-6">
+            <p class="text-muted">
+                © 2023 Corp Vision All Rights Reserved | WordPress Theme by
+                <strong class="text-success">W3Layouts</strong>.
+            </p>
+        </div>
+    </footer>
+
+    <div class="goToTop">
+        <button id="goToTop_btn">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+    </div>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

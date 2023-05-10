@@ -1,0 +1,100 @@
+section:nth-child(even) {
+  background-color: #f7f7f7 !important;
+}
+
+section:nth-child(odd) {
+  background-color: #fff !important;
+}
+
+.service-layout .wrapper {
+  background-color: #fff;
+}
+
+.industries-layout .row.gy-5 .row.p-5 {
+  background-color: #fff;
+}
+
+section.solution-layout {
+  background-color: #f7f7f7 !important;
+}
+section.solution-layout .wrapper {
+  background-color: #fff;
+}
+section.solution-layout .wrapper:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 1s;
+}
+
+.form-layout {
+  background: url("./../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+}
+.form-layout .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(29, 42, 55, 0.8);
+  z-index: 0;
+}
+.form-layout .title .sub-title {
+  color: var(--bg-light);
+}
+.form-layout .title h1 {
+  color: var(--light2);
+}
+.form-layout .row.align-items-center h4.mb-2 {
+  color: var(--bg-light);
+}
+.form-layout .row.align-items-center p,
+.form-layout .row.align-items-center a,
+.form-layout .row.align-items-center span {
+  font-weight: bold;
+  color: var(--light1);
+}
+.form-layout .wrapper {
+  background-color: #fff;
+}
+.form-layout .wrapper form .form-control {
+  background-color: #f7f7f7;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 1.2rem 2rem;
+}
+
+.dark main section {
+  background-color: var(--dark2) !important;
+}
+.dark main section:nth-child(even) {
+  background-color: var(--dark1) !important;
+}
+.dark .industries-layout .row.gy-5 .row.p-5 {
+  background-color: var(--dark1);
+}
+.dark .form-layout .overlay {
+  background-color: rgba(29, 42, 55, 0.8);
+}
+.dark .form-layout .wrapper {
+  background-color: var(--dark2);
+}
+.dark .form-layout .wrapper form .form-control {
+  background-color: var(--dark1);
+}
+.dark .solution-layout .row.gy-5 .row.p-5 {
+  background-color: #f7f7f7;
+}
+.dark section.solution-layout {
+  background-color: var(--dark1) !important;
+}
+.dark section.solution-layout .wrapper {
+  background-color: var(--dark2);
+}

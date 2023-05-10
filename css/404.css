@@ -1,0 +1,48 @@
+section.error-page {
+  background-color: #f7f7f7 !important;
+}
+section.error-page h1.green-default {
+  font-size: 9rem;
+}
+section.error-page form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+section.error-page form:is(:hover, :focus) {
+  border-color: black;
+}
+section.error-page form .form-control {
+  flex: 1;
+  padding: 1rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+section.error-page form .form-control::-moz-placeholder {
+  font-style: italic;
+}
+section.error-page form .form-control::placeholder {
+  font-style: italic;
+}
+section.error-page form .form-control:is(:hover, :focus) {
+  box-shadow: none;
+  outline: none;
+}
+section.error-page form button {
+  padding: 1rem 1.5rem;
+  height: 100%;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: var(--green-default);
+  color: #fff;
+}
+
+.dark section.error-page {
+  background-color: var(--dark1) !important;
+}
+.dark section.error-page form .form-control {
+  border-color: rgba(0, 0, 0, 0.1);
+}
